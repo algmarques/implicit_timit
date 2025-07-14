@@ -1,0 +1,66 @@
+{
+    "hidden_size": 256,
+    "epochs": 64,
+    "target": "phonemes",
+    "skip": 4,
+    "train_batch_size": 16,
+    "eval_batch_size": 32,
+    "lr": 0.001,
+    "alpha": 0.0,
+    "beta": 0.0,
+    "gamma": 0.0,
+    "zeta": 0.0,
+    "sigma": 0.0,
+    "betas": [
+        0.9,
+        0.98
+    ],
+    "warmup_epochs": 8,
+    "tau_ub": 1.5,
+    "tau_lb": 0.5,
+    "omega_ub": 1.0,
+    "omega_lb": 0.0,
+    "teacher_forcing": 0,
+    "layer_dropout": 0.1,
+    "layer_norm_eps": 1e-5,
+    "detach": 0,
+    "freeze": 0,
+    "recycle": 0,
+    "block": 0,
+    "gumbel_softmax": 1,
+
+    "length": 256,
+
+    "frame_length": 400,
+    "hop_length": 160,
+    "feat_proj_input_dim": 160,
+    "feat_proj_dropout": 0.0,
+
+    "n_groups": 2,
+    "codebook_size": 256,
+    "codebook_dim": 128,
+
+    "masked_span_prob": 0.05,
+    "masked_span_length": 8,
+    "n_negatives": 64,
+
+    "intermediate_size": 1024,
+    "feed_forward_dropout": 0.0,
+
+    "n_hidden_layers": 6,
+    "hidden_dropout": 0.0,
+    "output_hidden_size": 256,
+    "n_attention_heads": 8,
+    "attention_dropout": 0.0,
+
+    "position_embeddings_type": "relative_key",
+    "left_max_position_embeddings": 64,
+    "right_max_position_embeddings": 8,
+
+    "conv_kernel_size": 31,
+    "conv_dropout": 0.1,
+
+    "n_layers": 2,
+    "decoding_range": 32,
+    "ft": 1
+}
